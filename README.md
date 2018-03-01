@@ -1,2 +1,2 @@
-# curso_tajamar
-Ejercicios clase
+# Curso Web Tajamar
+Ejercicios clase Tajamar 2018
