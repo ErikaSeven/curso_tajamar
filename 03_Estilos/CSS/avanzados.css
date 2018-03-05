@@ -32,7 +32,8 @@ section::after{
 
 section p::before{
     counter-increment: section;
-    content: counter(section) ". ";
+    content: counter(section) 
+    url(../img/favicon.png);
 }
 
 [name="Lorem"] {color: darkgreen}
