@@ -1,0 +1,26 @@
+body{
+
+    color: blueviolet; 
+    border: 1px solid coral;
+    margin: 5rem;
+
+    }
+
+
+    h1, p {
+        color: crimson;
+    }
+    
+
+    h1 {
+        
+        font-size: 6rem;
+    }
+    
+    p {
+        
+        font-size: 2rem;
+    }
+
+
+

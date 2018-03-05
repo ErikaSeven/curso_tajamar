@@ -1,0 +1,40 @@
+footer>p {
+    color: chartreuse
+}
+
+footer:hover p.derechos {
+    font-size: 3rem;
+}
+
+article .p2+p:hover {
+    color: blue
+}
+
+article .p2+p::first-letter{
+    font-size: 3rem;
+    font-family: fantasy;
+}
+
+article .p2+p::first-line{
+    font-weight: bold;
+}
+
+section::before {
+    content: "Empieza lo bueno";
+    color:salmon
+}
+
+section::after{
+    content:"Termina lo bueno";
+    color: salmon;
+    
+}
+
+section p::before{
+    counter-increment: section;
+    content: counter(section) ". ";
+}
+
+[name="Lorem"] {color: darkgreen}
+[name="Sapieten"] {color: fuchsia}
+

@@ -1,0 +1,26 @@
+
+/*
+Ejemplo de importación
+@import "extrass.css"; */
+
+/*Especificidad:
+
+a   - in line
+b   - id
+c   - class u otros atributos
+d   - etiquetas
+
+a.b.c.d
+*/
+
+
+/*Selector mediante id: NO SE USAN NUNCA */
+#p1 {color: firebrick}
+
+/*Selector mediante class: LOS MÁS USADOS
+Especificidad: 0.0.1.0*/
+.p1 {color: goldenrod}
+
+/*Selector mediante etiqueta
+Especificidad 0.0.0.1*/
+p {color: fuchsia}
