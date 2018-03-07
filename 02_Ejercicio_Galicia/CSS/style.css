@@ -1,26 +1,54 @@
 
-@import 'https://fonts.googleapis.com/css?family=Shrikhand'
+@import 'https://fonts.googleapis.com/css?family=Rozha+One';
+
 
 body {
-    font-family: Raleway , sans-serif;
+    font-family: 'Raleway', sans-serif;
    
 }
 
-
+.container{
+    width: 80%;
+    max-width: 1080px;
+    min-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 
 
 header h1 {
-    color: blueviolet;
-    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Rozha+One';
+    color:darkolivegreen;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+header h2 {
+    text-align: center;
+    font-family: 'Raleway';
+    color:darkolivegreen;
+    font-size: 1.9rem;
     font-weight: bold;
     margin: 0;
 }
 
 
-h2{
+h2 {
+    color: goldenrod;
     font-style: italic;
     font-weight: bold;
 }
+
+p {
+    width: 100%
+
+}
+
+
 
 
  /* header p {
