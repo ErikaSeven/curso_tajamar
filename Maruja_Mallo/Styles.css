@@ -1,0 +1,11 @@
+* {box-sizing: border-box}
+
+.container{
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.body{
+    background-image: url(./img/portada_maruja.JPG);
+}
