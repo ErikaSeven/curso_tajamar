@@ -35,6 +35,8 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+font-awesome-4.7.0/
+fontawesome-free-5.0.8/
 
 # Typescript v1 declaration files
 typings/
