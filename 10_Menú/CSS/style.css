@@ -1,0 +1,99 @@
+* ::after,*::before,
+* :after,*:before,{
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+   min-height: 80vh;
+}
+
+
+nav{
+    margin-bottom: 1rem
+}
+/* GENERICO PARA TODOS LOS MENUS */
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: unset;
+    padding: 3rem;
+}
+/* GENERICO PARA TODOS LOS MENUS */
+
+
+
+nav.menu1 a {
+    display: block;
+    padding: .5rem 3rem;
+}
+
+nav.menu1 li  {
+    display: inline-block;
+    border-right: solid black;
+}
+
+
+nav.menu1 li:first-of-type{
+    border-left: solid rgb(63, 63, 63);
+}
+
+nav.menu1 ul{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+/* ACABA MENU 1 */
+
+nav.menu2 {
+    background-color: salmon;
+    /* overflow: hidden; */
+}
+
+
+nav.menu2 ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav.menu2 ul{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav.menu2 li {
+    width: 20%;
+    float: left;
+}
+
+nav.menu2 a {
+    display: block;
+    padding: 1rem 1rem;
+    text-align: center;
+    border: solid royalblue;
+    white-space: nowrap;
+}
+
+nav.menu2 a:hover{
+    padding: 1rem 1rem;
+    text-align: center;
+}

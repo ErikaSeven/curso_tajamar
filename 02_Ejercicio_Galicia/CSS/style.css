@@ -4,221 +4,308 @@
 @import 'https://fonts.googleapis.com/css?family=Rozha+One';
 
 
-body {
-    font-family: 'Raleway', sans-serif;
-   }
+body{ 
+   font-family: 'Raleway', sans-serif;
+}
 
 .container{
-    width: 70%;
+    width: 80%;
     /* max-width: 1080px;
     min-width: 480px;
     margin-top: 2rem;
-    margin-bottom: 2rem; */
-    background-color:rgb(245, 245, 245);
-    /* padding-left: 1rem;
+    margin-bottom: 2rem; 
+    background-color: rgb(255, 255, 255);
+    padding-left: 1rem;
     padding-right: 1rem; */
     margin-left:auto;
     margin-right: auto;
-    box-shadow: 0px 0px 16px 3px rgba(0, 124, 128, 4);
-    }
+    box-shadow: 0px 2px 28px 1px rgba(0, 124, 128, 0.75);
+}
 
 
+/* AQUI EMPIEZA EL HEADER */
 header h1 {
     text-align: left;
     font-family: 'Rozha+One';
     color:rgb(255, 255, 255);
-    font-size: 2rem;
-    font-weight: bold;
-    margin-left: 1rem;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: auto
+  
 }
+    
 
 header h2 {
-    text-align: right;
+    text-align: left;
     font-family: 'Raleway';
-    color:rgb(255, 255, 255);
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-left: 1rem;
-    }
-
-  
-
- /* AQUI EMPIEZA 1º ARTICLE   */
-
-/* IMAGEN TRIBU */
-    img{
-        float: left;
-        padding-right: 2rem;
-    }
-
-    figure{
-        margin: 0;
-        padding: 0;
-        float: left;
-        padding-right: 1rem;
-        padding-left: 2rem; 
-        padding-bottom: 1rem;
-        width: 60%;
-    }
-
-    img{
-     width: 100%;
-     height: auto;
-    }
-    
-/* IMAGEN TRIBU */
-
-/* AQUI EMPIEZA ETIMOLOGIA */
-
-    .ah { color: rgb(0, 124, 128);
-        padding-left: 2rem;
-    }
-
-    .p1 { 
-        color: rgb(49, 51, 51);
-        font-size: 0.95rem;
-        text-align: left;
-        display: inline;
-        
-    }
-
-    .cajab {
-        padding: 1rem;
-    }
-/* AQUI ACABA ETIMOLOGIA */
-/* AQUI ACABA 1º ARTICLE   */
-
-
-
-/* AQUI EMPIEZA 2º ARTICLE   */
-/* AQUI EMPIEZA GALLAECIA */
-    .p2 {
-        font-weight: bold;  
-        font-size: 0,95rem;
-        color: white;
-        line-height: 1.2rem;
-    }
-
-    .p3 { 
-        color: white;
-        font-size: 0.95rem;
-        text-align: left;
-        display: inline;
-    }
-
-/* FOTO DOLMEN */
-
-.figD {
-    float: right;
-    padding-right: 1rem;
-    padding-left: 2rem; 
-    padding-bottom: 3rem;
-    width: 60%;
+    display: block;
+    margin-top: auto;
+    font-size: 1.3rem;
+ 
 }
 
-.imgD {
- width: 100%;
- height: auto;
+.caja {
+    background-color: rgb(0, 124, 128);
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+}
+/* AQUI ACABA EL HEADER */
+
+/* FIGURE IZQUIERDA */
+ 
+img{
+    float: left;
+    /* padding-right: 2rem;
+    padding-left: 2rem; */
+    /* clear: both; */
 }
 
-/* FOTO PETROGLIFOS */
-
-.figDA { 
+figure {
+    display: block;
     margin: 0;
     padding: 0;
     float: left;
+    /* padding-right: 2rem; */
+    /* width: 50%; */
+    clear: bottom;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+img {
+ width: 650px;
+ height: 100%;
+}
+
+/* FIGURE IZQUIERDA */
+
+/* FIGURE DERECHA */
+
+ img{
+    float: right;
+    /* padding-right: 2rem;
+    padding-left: 2rem; */
+     
+}
+ 
+.cajaD {
+    float: right;
+    display: block;
+    /* padding-left: 2rem; */
+    width: 40%
+}
+
+.cajaD img {
+ width: 500px;
+ height: 100%;
+ padding-left: 3rem;
+ /* padding-left: 2rem; */
+ 
+}
+
+/* FIGURE DERECHA */
+
+
+
+/* EMPIEZA VIDEO DERECHA */
+
+video {
+    position: relative;
+    display: block;
+    float: right;
+    width: auto;
+    max-height: 450px;
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+    clear: bottom;
+}
+
+/* ACABA VIDEO DERECHA */
+
+
+
+
+/* EMPIEZAN LOS ESTILOS GENERALES */
+
+/*EMPIEZA CAJA BLANCA */
+
+.cajab {
     padding-right: 1rem;
-    padding-left: 1rem; 
-    padding-bottom: 2.5rem;
-    width: 60%;
+    padding-bottom: 1rem;
 }
 
-.imgD {
- width: 100%;
- height: auto;
+h1 {
+    font-size: 2rem; 
+    font-weight: bold;
+    color: rgb(0, 124, 128);
+    padding-left: 2rem;
 }
 
-/* FOTO PETROGLIFOS */
-
-ul {
-    list-style-type: disc;
+p {
+    font-size: 0.95rem;
+    color: rgb(42, 43, 43);
+    /* margin-left: 2rem; */
+    width: 100%;
+    padding-left: 2rem; 
+    padding-right: 1rem;
 }
 
-.bh {
+.h2b {
+    color: rgb(0, 124, 128);
+    font-weight: bold;
+    margin-left: 2rem;
+    padding-top: 1rem;
+}
+/*ACABA CAJA BLANCA */
+
+
+/* EMPIEZA CAJA AZUL */
+
+.caja1 {
+    background-color: rgb(0, 124, 128);
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+}
+
+.hB {
+    font-size: 2rem; 
+    font-weight: bold;
     color: rgb(255, 255, 255);
-    font-weight: bold; 
+    padding-left: 2rem;
+}
+
+.pex {
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
 }
 
 h2 {
     color: rgb(255, 255, 255);
-    font-size: 1.3rem;
-}
-/* AQUI ACABA 2º ARTICLE   */
-
-
-
-.caja {
-    background-color: rgb(0, 124, 128);
-    padding-top: .1rem;
-    padding-bottom: .1rem;
-}
-
-
-   
-
-.caja1 {
-    background-color: rgb(0, 124, 128);
-    /* padding-top: .1rem;
-    padding-bottom: .6rem; */
-    padding: 1rem;
-}
-
-
-
-
-
-
-
-
-
-
-ol{
+    font-weight: bold;
+    margin-left: 2rem;
+    padding-top: 1rem;
 
 }
 
-table.t1 {
-    background: rgb(0, 124, 128);
-    text-align: center;
-   
-    }
+.pb {
+    color: rgb(255, 255, 255);
+    font-size: 0.95rem;
+    width: 100%;
+    margin-right: 1rem;
+    padding-right: 2rem;
+    
+}
+/* ACABA CAJA AZUL */
 
-  
+/* EMPIEZA FOOTER */
+
+a {
+    float: left;
+    margin-left: 2rem;
+    vertical-align: auto;
+    color: white;
+}
+
+span {
+    color: rgb(255, 255, 255);
+    float: right;
+    vertical-align: auto;
+}
+
+/* ACABA FOOTER */
+
+
+/* LISTAS */
+
+ul li { 
+    color: white;
+    list-style-type: circle;
+    margin-left: 2rem;
+    /* margin-left: 1rem; */
+}
+
+
+/* TABLA */
+
 
 table {
-    border: .1rem solid
-
+    border-collapse: collapse;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    width: 80%;
+    
 }
+    
 
-table.t2 th {
-    text-align: left;
-    padding-right: 1rem;
+
+.tr1 {
+    background:rgb(0, 124, 128);
+    text-align: center;
+    height: 40px;
+    color: white;
     border: .1rem solid;
 }
 
-.tr1 {
-    background: gray;
+
+.tr2 {
+    background: rgb(204, 204, 204);
     text-align: middle;
-    border: .1rem thin;
-}
-td{
-    border: .1rem solid
+    border: .1rem solid;
+    height: 30px;
 }
 
+td {
+    border: .1rem solid;
+    padding-left: 1rem;
+}
+
+th {
+    border: .1rem solid;
+    height: 25px;
+}
+
+/* ACABA TABLA */
+
+
+/* PIES DE FOTO */
+
+ figcaption {
+    display: block;
+    width: 100%;
+    /* line-height: normal; */
+    font-size:0.95rem;
+    background:rgba(0, 0, 0, 0.75);
+    color:rgb(255, 255, 255);
+    font-style:italic;
+    padding: 0.7rem;
+    text-align: center; 
+    /* position: unset; */
+    
+    /* vertical-align: middle; */
+    
+}
+.pieD {
+    display: block;
+    width: 100%;
+    /* line-height: normal; */
+    font-size:0.95rem;
+    background:rgba(0, 0, 0, 0.75);
+    color:rgb(255, 255, 255);
+    font-style:italic;
+    padding: 0.5rem;
+    text-align: center; 
+    /* vertical-align: middle; */
+
+   }
 
 
 
 
- /* header p {
+
+/* header p {
     color: brown;
     font-size: 1.5rem;
     font-weight: bold;
