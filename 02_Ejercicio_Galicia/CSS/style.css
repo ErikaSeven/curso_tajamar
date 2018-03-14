@@ -51,13 +51,15 @@ header h2 {
 }
 /* AQUI ACABA EL HEADER */
 
+
+
 /* FIGURE IZQUIERDA */
  
-img{
+img {
     float: left;
-    /* padding-right: 2rem;
-    padding-left: 2rem; */
-    /* clear: both; */
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
 }
 
 figure {
@@ -68,9 +70,8 @@ figure {
     /* padding-right: 2rem; */
     /* width: 50%; */
     clear: bottom;
-    padding-bottom: 1rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
+
+
 }
 
 img {
@@ -85,7 +86,7 @@ img {
  img{
     float: right;
     /* padding-right: 2rem;
-    padding-left: 2rem; */
+    padding-left: 2rem;  */
      
 }
  
@@ -98,10 +99,8 @@ img {
 
 .cajaD img {
  width: 500px;
- height: 100%;
- padding-left: 3rem;
- /* padding-left: 2rem; */
- 
+ height: 80%;
+ /* padding-left: 3rem; */
 }
 
 /* FIGURE DERECHA */
@@ -235,7 +234,9 @@ table {
     margin-left:auto;
     margin-right: auto;
     margin-top: 2rem;
-    width: 80%;
+    width: 30%;
+    margin-bottom: 3rem;
+    display:block;
     
 }
     
@@ -273,33 +274,17 @@ th {
 /* PIES DE FOTO */
 
  figcaption {
-    display: block;
-    width: 100%;
+    /* display: block; */
+    /* width: 100%; */
     /* line-height: normal; */
     font-size:0.95rem;
-    background:rgba(0, 0, 0, 0.75);
+     /* background:rgba(0, 0, 0, 0.75); */
     color:rgb(255, 255, 255);
     font-style:italic;
-    padding: 0.7rem;
+    /* padding: 0.7rem; */
     text-align: center; 
-    /* position: unset; */
-    
-    /* vertical-align: middle; */
-    
 }
-.pieD {
-    display: block;
-    width: 100%;
-    /* line-height: normal; */
-    font-size:0.95rem;
-    background:rgba(0, 0, 0, 0.75);
-    color:rgb(255, 255, 255);
-    font-style:italic;
-    padding: 0.5rem;
-    text-align: center; 
-    /* vertical-align: middle; */
 
-   }
 
 
 

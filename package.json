@@ -1,0 +1,31 @@
+{
+  "name": "curso_tajamar",
+  "version": "1.0.0",
+  "description": "ejercicios del curso",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErikaSeven/curso_tajamar.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JS",
+    "aprendizaje"
+  ],
+  "author": "Erika Seven",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ErikaSeven/curso_tajamar/issues"
+  },
+  "homepage": "https://github.com/ErikaSeven/curso_tajamar#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
