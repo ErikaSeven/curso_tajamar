@@ -1,3 +1,4 @@
+import { exists } from "fs";
 
 //expresión de asiganción
 let x = 25
@@ -24,10 +25,15 @@ console.log(x)
 //Operadores relacionales
 x = 12
 y = '12'
-console.log( x == y)
+console.log( x == y) //igual
 console.log( x != y) //negativo
-console.log( x === y)
+console.log( x === y) //idéntico
 console.log( x !== y)
+
+//ERROOOOOOR
+// if (x= 22) {
+    
+// }
 
 if(x === 12) {
     console.log("Estoy dentro del if")
@@ -40,9 +46,18 @@ console.log(x < y)  //Lo lee por el orden de las letras, a es anterior a d. Mane
 
 console.log(x.lenght === y.lenght) 
 
-//Operadores ternarios
+//Operadores ternarios: consta de tres partes, una expresióny dos respuestas diferentes
 
 //expresion ? true : false
 
 let edad = 12
-console.log(edad > 30 ? 'Buenos días' : 'Hola chaval') //Para expresiones sencilles donde queremos sacar dos mensajes diferentes
+console.log(edad > 30 ? 'Buenos días' : 'Hola chaval') //Para expresiones sencillas donde queremos sacar dos mensajes diferentes
+
+let a = 12
+let b = 2
+let c = 4
+
+if(a > b || a < z) {
+    console.log("Comprobado")
+}
+

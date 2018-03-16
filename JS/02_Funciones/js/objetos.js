@@ -30,7 +30,7 @@ let aDatosChungo = [12, 'Pepe', true, null, undefined,]  //Podemos meter objetos
 console.log(aDatos)
 console.log(aDatos[1]) //Los corchetes indican posición
 aDatos[15] = 30
-console.log(aDatos) //con esto nor guarda 30 posiciones
+console.log(aDatos) //con esto nos guarda 30 posiciones
 
 aUsuarios = [
     {  nombre : 'Pepe',
@@ -59,6 +59,10 @@ edad : 23,
 isCasado : false} //Así tantos usuarios haya
 ]
 
+
+//Array
+
+let x= {}
 
 
 // console.log(Array.isArray(aUsuarios))

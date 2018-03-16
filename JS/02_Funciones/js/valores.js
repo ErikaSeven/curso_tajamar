@@ -16,3 +16,18 @@ o1.valor = 24
  
 console.log(o1) //valor : 24
 console.log(o2) //valor : 24
+
+let a = 12
+let b = 2
+let c = 4
+
+if(a < b && a < z) {
+    console.log("Comprobado")
+}
+
+
+let a= { valor = 5}
+
+if (a.valor === 5) {
+    console.log()
+}
