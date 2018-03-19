@@ -39,16 +39,16 @@ function calcularPar(n) {
 
 function mostrarEsPar (n) {
     const aMensajes = [
-        'El número ${n} es PAR',
-        'El número ${n} es IMPAR',
-        'El número ${n} es decimal',
-        'El dato ${n} no es un número'
-        
+        `El número ${n} es PAR`,
+        `El número ${n} es IMPAR`,
+        `El número ${n} es decimal`,
+        `El dato ${n} no es un número`
     ]
+
     //r puede valer 0,1 o -1
     let r = calcularPar(n)
     if ( r < 0) { r = -r}
-    // r = (r === -1) ? 2 : r  ///r puede valer o,1 o 2. Si r es = -1 se convierte en 2
+//    r = (r === -1) ? 2 : r  r puede valer o,1 o 2. Si r es = -1 se convierte en 2 
     console.log(aMensajes[r])
 }
 
@@ -59,10 +59,3 @@ mostrarEsPar(12.5)
 mostrarEsPar(11.5)
 
 
-// if ( 2 == 1 ){
-//   mensaje += 'par'
-// }
-// if ( 2 !== 1 ) {
-//     mensaje += 'impar'
-//     console.log(y)
-// }
