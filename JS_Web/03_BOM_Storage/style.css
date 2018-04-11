@@ -1,0 +1,26 @@
+*, *::after, *::before, *:after, *:before {
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+    margin: 3rem;
+}
+main {
+    min-height: 60vh;
+}
+
+main button{
+    color:palevioletred
+}
+
+main div{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+p{
+    border: 1px solid olivedrab;
+    width: 50%;
+    
+}
