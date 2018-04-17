@@ -7,24 +7,26 @@
     <title>Formulario</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-    <script src="./app.js"></script>
+    <script src="./form_app1.js" type="module"></script>
+    
 </head>
 
 
 <body>
         <main>
-            <fieldset class="cuerpo">
-                <legend>Datos del Alumno</legend>
+            
+            <form action="" method="GET" id='form'></form>
+                <fieldset class="cuerpo">
+                    <legend>Datos del Alumno</legend>
 
-                <form action="" method="GET" id='form1'>
-                
+
                     <div class="floatL">
                         <fieldset>
                             <legend id="datos">Identificación</legend>
 
                             <div class="control-group">
                                 <label for="email">Correo</label>
-                                <input type="email" name="email" id="correo" placeholder="correo" required>
+                                <input type="email" name="email" id="email" placeholder="Correo" required>
                             </div>
                             <div class="control-group">
                                 <label for="password">Contraseña</label>
@@ -32,23 +34,10 @@
                             </div>
                             <div class="control-group">
                                 <label for="password">Repite Contraseña</label>
-                                <input type="password" name="passwd2" id="password2" placeholder="Repite contraseña" required>
+                                <input type="password" name="passwd" id="password2" placeholder="Repite contraseña" required>
                             </div>
                         </fieldset>
-<!-- 
-                        <fieldset id="acedemic" class="ocultar">
-                                <legend>curso</legend>
-                                
-                                <div class="control-group">
-                                    <label for="curso">Selecciona un curso</label>
-                                    <select name="curso" id="curso">
-                                        <option value=""></option>
-                                        <option value="front">Desarrollo Front</option>
-                                        <option value="web">Diseño Web</option>
-                                        <option value="node">Servidores</option>
-                                        <option value="sql">Bases de Datos</option>
-                                    </select>
-                                </div> -->
+
                        
                             <fieldset id="academic" class="ocultar">
                                 <legend>Cursos</legend>
@@ -139,12 +128,11 @@
                         <div id="resultados"></div>
                          
                     </div>
-                
-                </form>
 
-            </fieldset> 
+                </fieldset> 
                 
-                    
+            
+
         </main>
             
 </body>

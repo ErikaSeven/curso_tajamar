@@ -13,6 +13,9 @@ export class Formulario {
         datos: '',
         curso: {},
         asignaturas: [],
+        dia: '',
+        mes:'',
+        año:'',
       
     }
          
@@ -31,7 +34,7 @@ export class Formulario {
         this.domInpEmail = document.querySelector('#email')
         this.domInpPasswd = document.querySelector('#passwd')
         this.domInpPasswd2 = document.querySelector('#passwd2')
-        //this.domRadioCurso = document.querySelectorAll('[name="curso"]') 
+        this.domRadioCurso = document.querySelectorAll('[name="curso"]') 
         this.domFieldAcademic = document.querySelector('#academic')
         this.domSelectCurso = document.querySelector('#curso')
         this.domSelectTopics = document.querySelector('#topics')
@@ -46,16 +49,14 @@ export class Formulario {
         this.domInpAño = document.querySelector('#año')
         this.domDivAfi = document.querySelector('#afi')
         this.domDivAfi2 = document.querySelector('#afi2')
-        //this.domInpFecha = document.querySelector('#fecha')
         this.domTiempo = document.querySelector('#tiempo')
 
     }
 
     definirManejadores() {
         this.domFormulario.addEventListener('submit', this.enviar.bind(this))
-        this.domSelectCurso.addEventListener('change', this.presentarAsignaturas.bind(this))
-        }
-
+        //this.domSelectCurso.addEventListener('change', this.presentarAsignaturas.bind(this))
+    }
 
 
     
@@ -94,15 +95,13 @@ export class Formulario {
     recogerDatos() {
         this.datos.email = this.domInpEmail.value
         this.datos.passwd =  this.domInpPasswd.value
-        //this.datos.curso = this.procesarRadio(this.domRadioCurso)
-        this.datos.curso = this.procesarSelect(this.domSelectCurso)
+        this.datos.curso = this.procesarRadio(this.domRadioCurso)
         this.datos.nombre = this.domInpNombre.value
         this.datos.apellido = this.domInpApellido.value
         this.datos.apellido = this.domInpApellido2.value
         this.datos.dia = new Date(this.domInpDia.value)
         this.datos.mes = new Date(this.domInpMes.value)
         this.datos.año = new Date(this.domInpAño.value)
-        this.datos.tiempo = new Date(this.domInpTiempo.value)
       
     }
 
@@ -115,38 +114,41 @@ export class Formulario {
     }
 
     procesarRadio(nodo) {
-        let index = nodo.selectedIndex
-        return {
-            code: nodo.options[index].value, 
-            text: nodo.options[index].textContent
-        }    
+    let value
+        nodo.forEach((item) => {
+            if (item.checked) {
+            value = item.value}
+        })
+        return value
     }
 
-    presentarAsignaturas(ev) {
-        ev.target.firstElementChild.classList.add('ocultar')
-        let topics = CURSOS[ev.target.selectedIndex - 1].asignaturas
-        let HTMLResult = ''
-        topics.forEach(elem => HTMLResult += `<option>${elem}</option>`)
-        this.domDivTopics.classList.remove('ocultar')
-        this.domSelectTopics.innerHTML = HTMLResult
-    }
+
+
+    // presentarAsignaturas(ev) {
+    //     //ev.target.firstElementChild.classList.add('ocultar')
+    //     let topics = CURSOS[ev.target.selectedIndex - 1].asignaturas
+    //     let HTMLResult = ''
+    //     topics.forEach(elem => HTMLResult += `<option>${elem}</option>`)
+    //     this.domDivTopics.classList.remove('ocultar')
+    //     this.domSelectTopics.innerHTML = HTMLResult
+    // }
 
     presentarDatos() {
         let resultadoHTML =
         `<h2>Resultados</h2>
         <ul>
-        <li>email: ${this.datos.email}</li>
-        <li>Contraseña: ${this.datos.passwd}</li>
-        <li>Asignaturas: ${CURSOS[this.seleccionarIndexCurso()].asignaturas}</li>
-        <li>Curso: ${this.datos.curso.text}</li>
-        <li>Nombre: ${this.datos.nombre}</li>
-        <li>Apellido: ${this.datos.apellido}</li>
-        <li>Apellido2: ${this.datos.apellido2}</li>
-        <li>Fecha de nacimiento: ${this.datos.dia}</li>
-        <li>Fecha de nacimiento: ${this.datos.mes}</li>
-        <li>Fecha de nacimiento: ${this.datos.año}</li>
-        <li>Aficiones: ${this.domAfi.value}</li>
-        <li>Aficiones: ${this.domAfi2.value}</li>
+            <li>email: ${this.datos.email}</li>
+            <li>Contraseña: ${this.datos.passwd}</li>
+            <li>Asignaturas: ${CURSOS[this.seleccionarIndexCurso()].asignaturas}</li>
+            <li>Curso: ${this.datos.curso.text}</li>
+            <li>Nombre: ${this.datos.nombre}</li>
+            <li>Apellido: ${this.datos.apellido}</li>
+            <li>Apellido2: ${this.datos.apellido2}</li>
+            <li>Fecha de nacimiento: ${this.datos.dia}</li>
+            <li>Fecha de nacimiento: ${this.datos.mes}</li>
+            <li>Fecha de nacimiento: ${this.datos.año}</li>
+            <li>Aficiones: ${this.domAfi.value}</li>
+            <li>Aficiones: ${this.domAfi2.value}</li>
         </ul>
         `
         this.domDivResultados.innerHTML = resultadoHTML
