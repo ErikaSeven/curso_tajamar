@@ -1,85 +1,103 @@
-function main () {
+function app() {
 
-        document.querySelector("#btnAjax")
-        .addEventListener('click', getDatos)
+    let ajax
+
+    document.querySelector("#btnAjax")
+    .addEventListener('click', getDatos)
+
+    document.querySelector("#btnAjaxItem")
+    .addEventListener('click', getDatos)
+
+    document.querySelector("#btnAjaxBorrar")
+    .addEventListener('click', deleteDatos)
     
-        document.querySelector("#btnAjaxItem")
-        .addEventListener('click', getDatos)
-    
-        document.querySelector("#btnAjaxBorrar")
-        .addEventListener('click', deleteDatos)
+    document.querySelector("#btnAjaxAdd")
+    .addEventListener('click', postDatos) // Añadir
 
-        document.querySelector("#btnAjaxAdd")
-        .addEventListener('click', postDatos) //Añadir
+    document.querySelector("#btnAjaxModif")
+    .addEventListener('click', putDatos) //Modif
 
-        document.querySelector("#btnAjaxM")
-        .addEventListener('click', ModDatos) //modifica
-
-
-    function getDatos(ev){
+    function getDatos(ev) {
         let metodo = 'GET'
         let url = ''
-        if (ev.target.id == '#btnAjax') {
+        if (ev.target.id == 'btnAjax') {
             url = 'http://localhost:3000/posts'
-        } else {
+        } else { // ev.target.id == 'btnAjaxItem'
             let item = document.querySelector('#item').value
-        if (item){
-            url = 'http://localhost:3000/posts'+item
-        } else {
-            return
+            if (item) {
+                url = 'http://localhost:3000/posts/'+item
+            } else {
+                return
             }
         }
-        conectar (metodo, url, null)
+        
+        conectar(metodo, url, null, stateChange)   
     }
-    
-    function deleteDatos(ev){
+
+    function deleteDatos(ev) {
         let metodo = 'DELETE'
         let url = ''
         let item = document.querySelector('#itemB').value
         if (item) {
-             url = 'http://localhost:3000/posts'+item
+            url = 'http://localhost:3000/posts/'+item
         } else {
             return
         }
-        conectar (metodo, url, null)
-    }
-
-
-    function postDatos(){
-        let data = {
-            title: "Los intelectuales tienen tetas",
-            author:"Erika Seven"}
-        let metodo = 'POST'
-        let url = 'http://localhost:3000/posts'
-        conectar(metodo, url,JSON.stringify(data))
-
-    }
-
-
-    function stateChange (ev){
-        if (ajax.readyState === 4) {    //donde queremos que trabaje
-        if (ajax.status === 200) {
-            let response = JSON.parse(ajax.responseText)
-            console.dir(response)
-            } else {
-            console.log(ajax.status)
-            console.log(ajax.statusText)
-            }
-            
-        }
-
+        conectar(metodo, url, null, stateChange)
     } 
 
-        function conectar(metodo, url) {
-            let ajax = new XMLHttpRequest()
-            ajax.onreadystatechange = stateChange
-            ajax.open(metodo, url)
-            ajax.send(null)  
+    function postDatos () {
+        let data = {
+            id: undefined,
+            title: "Los intelectuales tienen tetas",
+            author: "Erika Seven"}
+        let metodo = 'POST'
+        let url = 'http://localhost:3000/posts'
+        conectar(metodo, url, JSON.stringify(data), stateChange)
+    }
+
+    function putDatos(ev) {
+        let data = {
+            title: "El muffin amorfo",
+            author: "Erika Seven"}
+        let metodo = 'PUT'
+        let url = ''
+        let item = document.querySelector('#itemM').value
+        if (item) {
+            url = 'http://localhost:3000/posts/'+item
+        } else {
+            return
+        }
+        conectar(metodo, url, JSON.stringify(data), stateChange)      
+    }
+
+    function stateChange () {
+        console.log("Cambio de estado")
+        console.log(ajax.readyState)
+        if (ajax.readyState === 4) {
+            console.log("Comunicación OK")
+            if(ajax.status === 200) {
+                let response = JSON.parse(ajax.responseText)
+                console.dir(response)
+            } else {
+                console.log(ajax.status)
+                console.log(ajax.statusText)
+            }
         }
     }
 
+    function conectar(metodo, url, data, funcion) {
+        ajax = new XMLHttpRequest()
+        ajax.onreadystatechange = funcion
+        ajax.open(metodo, url)
+        ajax.setRequestHeader('Content-Type', 'application/json')
+        ajax.setRequestHeader('Accept',  'application/json')
+        console.log(data)
+        ajax.send(data)
 
-window. addEventListener('load', main, false)
+    }
+}
+window.addEventListener('load', app, false)
 
     
 

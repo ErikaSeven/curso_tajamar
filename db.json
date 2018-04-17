@@ -1,7 +1,8 @@
 {
   "posts": [
     { "id": 1, "title": "Los intelectuales tienen tetas", "author": "Erika Seven" },
-    { "id": 2, "title": "El muffin amorfo", "author": "Erika Seven" , "contenido": "Es bien sabido que todo lo que tenga que ver con sudar horroriza a los intelectuales" }
+    { "id": 2, "title": "El muffin amorfo", "author": "Erika Seven" , "contenido": "Es bien sabido que todo lo que tenga que ver con sudar horroriza a los intelectuales" },
+    { "id": 3, "title": "Cómo acariciar a un barbudo", "author": "Erika Seven"}
   ],
   "comments": [
     { "id": 1, "body": "Libro que reflexiona acerca de la intelectualidad moderna", "postId": 1 },
