@@ -1,0 +1,23 @@
+main {
+    background-color: azure;
+     display: flex;
+     height: 100vh;
+     /* justify-content: flex-end; */
+     align-items: center;
+     flex-wrap: wrap;
+     align-content: stretch;
+     flex-direction: column;
+
+}
+
+
+div{
+    background-color: rgb(230, 211, 44);
+    border: 1px solid rgb(220, 220, 220);
+    font-size: 6rem;
+    padding: 1rem;
+}
+
+div:nth-of-type(3){
+    font-size: 7 rem
+}

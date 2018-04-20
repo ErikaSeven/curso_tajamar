@@ -1,0 +1,168 @@
+
+* {box-sizing: border-box;}
+
+
+
+
+.container {
+    width: 96%;
+    /* min-width: 360px; */
+    margin-right: auto;
+    margin-left: auto;
+    /* border: 1px solid; */
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.header, .footer {
+    min-height: 3rem;
+    background-color: rgb(151, 106, 165);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Nunito', sans-serif; 
+    font-weight: bold;
+}
+
+.header_h1 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 3rem;
+    width: 10%;
+    flex: 12 1 auto;
+    text-align: center;
+}
+
+
+
+h2{
+    color: rgb(151, 106, 165)
+}
+
+.nav_icon {
+    width: 20%;
+    flex: 1 1 auto;
+}
+
+.img_nav_icon{
+    width: 20%;
+}
+
+
+.nav_desk {
+    display: none;
+}
+
+.img_wrapper {
+    width: 98%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.section1{
+    padding: 2rem
+}
+
+
+.imagen {
+    width: 30%;
+}
+
+.imagen2 {
+    width: 80%;
+}
+
+.imagen3 {
+    width: 30%;
+}
+
+.hr1{
+    padding-right: 2rem
+}
+
+.num li{
+    padding-bottom: 2rem;
+}
+
+
+.main {
+    display: flex;
+}
+
+.section_wrapper{
+    width: 10%;
+    flex: 4 1 auto;
+    padding-right: 2rem; 
+    display: flex;
+}
+
+.aside_wrapper{
+    width: 10%;
+    flex: 1 1 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: rgb(243, 224, 255);
+        
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .main {
+        display: block;
+    }
+    
+    .section_wrapper{
+        width: 100%;
+    }
+
+    .aside_wrapper{
+        width: 100%;
+        background-color: rgb(243, 224, 255)
+            
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .img_wrapper {
+        margin-right: 2rem;
+        margin-left: 2rem;
+        float: left;
+    
+    }
+    .section_wrapper {
+        display: block;
+    }
+
+    .aside_wrapper{
+        background-color:  rgb(243, 224, 255)
+        
+    }
+
+    .section1 {
+        max-width: 100%;
+        padding-right: 2rem; 
+        padding-left: 2rem;
+
+    }
+
+    .nav_icon {
+        display: none;
+    }
+
+    .nav_desk {
+        display : flex;
+    }
+
+    .nav_mobile {        
+        display: none;
+    }
+}
+
+
+
+
+

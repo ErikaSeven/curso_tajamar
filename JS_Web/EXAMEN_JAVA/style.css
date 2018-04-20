@@ -18,7 +18,7 @@ legend{
 }
 
 .floatL{
-    width: 43%;
+    width: 40%;
     display: inline-block;
     clear: both;
     padding-right: 4rem;
@@ -29,7 +29,7 @@ legend{
 }
 
 .floatR{
-    width: 43%;
+    width: 40%;
     display: inline-block;
     clear: both;
     padding-right: 4rem;
@@ -83,4 +83,10 @@ div.afi{
     margin-left: 3rem;
     margin-right: 3rem;
 
+}
+
+footer {
+    padding: 2rem;
+    background-color: rgb(255, 209, 4);
+    font-weight: bold;
 }
